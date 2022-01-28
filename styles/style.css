@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* !!!! НЕ ЗАБЫТЬ ПОДКЛЮЧИТЬ ШРИФТЫ ЛОКАЛЬНО !!!! */
+
+.page{
+    margin: 0;
+    padding: 0;
+    background-color: #2A2C2F;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 28px 48px;
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.header__logo{
+    max-width: 176px;
+    max-height: 52px;
+}
+
+.header__lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__lang-link{
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.16;
+    font-weight: normal;
+}
+
+.header__lang-link_active{
+    text-decoration: underline 1px solid #ffffff;
+    text-underline-offset: 2px;
+}
+
+.header__lang-link:nth-of-type(1) {
+    margin-right: 18px;
+}
+
+.lead {
+    padding: 28px 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 984px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.lead__title {
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 1.04;
+    max-width: 720px;
+    text-align: center;
+}
+
+.lead__subtitle {
+    margin: 32px auto 64px auto;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 640px;
+}
+
+.lead__image {
+    max-width: 984px;
+    max-height: 615px;
+}
+
+.lead__caption {
+    margin: 8px 0 0 0;
+    padding: 0;
+    align-self: flex-start;
+    font-size: 0.625rem;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 984px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    font-size: 3.375rem;
+    line-height: 1.07;
+    font-weight: 900;
+}
+
+.intro__text {
+    max-width: 690px;
+    font-size: 1rem;
+    line-height: 1.63;
+    margin: 0;
+}
+
+.intro__list {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.intro__list-text {
+    font-weight: bold;
+    margin: 0;
+}
+
+.intro__span-numbers {
+    font-weight: normal;
+}
+
+.photo-grid {
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.photo-grid__list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    grid-gap: 16px;
+    padding: 92px 0;
+    margin: 0;
+}
+
+.photo-grid__list-item {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.photo-grid__item{
+    width: 100%;
+}
