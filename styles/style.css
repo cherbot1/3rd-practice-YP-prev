@@ -42,7 +42,7 @@
 
 .header__lang-link_active{
     text-decoration: underline 1px solid #ffffff;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
 }
 
 .header__lang-link:nth-of-type(1) {
@@ -96,6 +96,7 @@
     flex-direction: column;
     max-width: 984px;
     margin: 0 auto;
+    padding: 0 148px;
 }
 
 .intro__title {
@@ -130,6 +131,7 @@
 
 .photo-grid {
     max-width: 1184px;
+    padding: 0 48px;
     margin: 0 auto;
 }
 
@@ -150,4 +152,100 @@
 
 .photo-grid__item{
     width: 100%;
+}
+
+.places {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 984px;
+    padding: 0 148px;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 48px;
+    margin-bottom: 80px;
+}
+
+.place:nth-of-type(5) {
+    margin-bottom: 0;
+}
+
+.place__title {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5rem;
+    line-height: 1.05;
+    font-weight: 900;
+}
+
+.place__image {
+    max-width: 460px;
+}
+
+.place__website {
+    align-self: end;
+    justify-self: flex-start;
+}
+
+.place__url-heading {
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #aaa;
+    padding: 0 0 12px 0;
+    margin: 0;
+}
+
+.place__link {
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    text-underline-offset: 3px;
+}
+
+.place__link:hover {
+    opacity: 80%;
+}
+
+.place__paragraph {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    line-height: 1.63;
+}
+
+.place__paragraph:nth-of-type(2) {
+    margin-top: 26px;
+}
+
+.cover {
+    padding: 92px 48px;
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.cover__link {
+    align-self: center;
+    min-height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/cover__background.png");
+    background-size: cover;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+
+.cover__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 30%;
 }
