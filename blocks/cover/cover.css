@@ -3,3 +3,27 @@
     max-width: 1184px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1024px) {
+    .cover {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover {
+        padding: 66px 0;
+        max-width: 320px;
+        max-height: 200px;
+    }
+}

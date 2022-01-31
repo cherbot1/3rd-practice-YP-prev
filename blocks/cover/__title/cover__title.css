@@ -5,3 +5,13 @@
     font-size: 4.5rem;
     line-height: 1.05;
 }
+
+@media screen and (max-width: 320px) {
+    .cover__title {
+        max-width: 288px;
+        font-size: 2rem;
+        line-height: 1.09;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

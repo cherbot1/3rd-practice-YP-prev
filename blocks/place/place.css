@@ -9,3 +9,28 @@
 .place:nth-of-type(5) {
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .place {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .place {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .place {
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .place {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-bottom: 50px;
+    }
+}

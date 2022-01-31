@@ -1,3 +1,13 @@
 .footer__links-list-item{
     padding-right: 18px;
 }
+
+@media screen and (max-width: 320px) {
+    .footer__links-list-item {
+        padding-bottom: 32px;
+    }
+
+    .footer__links-list-item:nth-of-type(5) {
+        padding-bottom: 48px;
+    }
+}

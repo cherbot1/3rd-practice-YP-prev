@@ -6,3 +6,28 @@
     margin: 0 auto;
     padding: 0 48px 24px 48px;
 }
+
+@media screen and (max-width: 1024px){
+    .footer {
+        max-width: 928px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: 720px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        max-width: 186px;
+        padding-left: 16px;
+        flex-direction: column;
+        margin: 0;
+    }
+}

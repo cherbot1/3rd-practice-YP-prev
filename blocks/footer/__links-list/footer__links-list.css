@@ -6,3 +6,10 @@
     flex-direction: row;
     align-items: center;
 }
+
+@media screen and (max-width: 320px) {
+    .footer__links-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
