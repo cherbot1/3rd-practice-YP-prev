@@ -13,18 +13,20 @@
 
     <header class="header">
         <img src="images/logo.svg" class="header__logo" alt="Логотип">
-        <div class="header__lang">
-            <a href="#" class="header__lang-link header__lang-link_active link">Ru</a>
-            <a href="#" class="header__lang-link link">En</a>
-        </div>
+        <ul class="header__lang">
+            <li href="#" class="header__lang-link header__lang-link_active link">Ru</li>
+            <li href="#" class="header__lang-link link">En</li>
+        </ul>
     </header>
 
     <main class="content">
         <section class="lead">
             <h1 class="lead__title">Путешествия по России</h1>
             <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-            <img class="lead__image" src="images/lead__image.png" alt="Поезд в дороге">
-            <p class="lead__caption">ВАША ПОЛКА - ВЕРХНЯЯ</p>
+            <figure class="lead__figure">
+                <img class="lead__image" src="images/lead__image.png" alt="Поезд в дороге">
+                <figcaption class="lead__caption">ваша полка - верхняя</figcaption>
+            </figure>
         </section>
 
         <section class="intro">
@@ -95,7 +97,7 @@
         </section>
 
         <section class="places">
-            <div class="place">
+            <article class="place">
                 <h2 class="place__title">Куршская коса</h2>
                 <div class="place__website">
                     <h3 class="place__url-heading">URL</h3>
@@ -109,8 +111,8 @@
                         по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов.
                         Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
                 </div>
-            </div>
-            <div class="place">
+            </article>
+            <article class="place">
                 <h2 class="place__title">Кольский</h2>
                 <div class="place__website">
                     <h3 class="place__url-heading">URL</h3>
@@ -124,8 +126,8 @@
                         «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой
                         скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
                 </div>
-            </div>
-            <div class="place">
+            </article>
+            <article class="place">
                 <h2 class="place__title">Алтай</h2>
                 <div class="place__website">
                     <h3 class="place__url-heading">URL</h3>
@@ -139,8 +141,8 @@
                     <p class="place__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны.
                         По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
                 </div>
-            </div>
-            <div class="place">
+            </article>
+            <article class="place">
                 <h2 class="place__title">Зимний Байкал</h2>
                 <div class="place__website">
                     <h3 class="place__url-heading">URL</h3>
@@ -154,8 +156,8 @@
                         к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале
                         «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
                 </div>
-            </div>
-            <div class="place">
+            </article>
+            <article class="place">
                 <h2 class="place__title">Карелия</h2>
                 <div class="place__website">
                     <h3 class="place__url-heading">URL</h3>
@@ -169,7 +171,7 @@
                         В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья
                         в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section class="cover">
@@ -181,23 +183,25 @@
     </main>
 
     <footer class="footer">
-        <ul class="footer__links-list">
-            <li class="footer__links-list-item">
-                <a class="footer__link link" href="https://yandex.ru/maps" target="_blank">Карты</a>
-            </li>
-            <li class="footer__links-list-item">
-                <a class="footer__link link" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
-            </li>
-            <li class="footer__links-list-item">
-                <a class="footer__link link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
-            </li>
-            <li class="footer__links-list-item">
-                <a class="footer__link link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
-            </li>
-            <li class="footer__links-list-item">
-                <a class="footer__link link"  href="https://travel.yandex.ru" target="_blank">Путешествия</a>
-            </li>
-        </ul>
+        <nav>
+            <ul class="footer__links-list">
+                <li class="footer__links-list-item">
+                    <a class="footer__link link" href="https://yandex.ru/maps" target="_blank">Карты</a>
+                </li>
+                <li class="footer__links-list-item">
+                    <a class="footer__link link" href="https://yandex.ru/pogoda" target="_blank">Погода</a>
+                </li>
+                <li class="footer__links-list-item">
+                    <a class="footer__link link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
+                </li>
+                <li class="footer__links-list-item">
+                    <a class="footer__link link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
+                </li>
+                <li class="footer__links-list-item">
+                    <a class="footer__link link"  href="https://travel.yandex.ru" target="_blank">Путешествия</a>
+                </li>
+            </ul>
+        </nav>
         <p class="footer__copyright">&#169; 2022. Михайлов Олег</p>
     </footer>
 

@@ -10,5 +10,6 @@
 @media screen and (max-width: 320px) {
     .photo-grid__list {
         padding: 64px 0;
+        grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
     }
 }

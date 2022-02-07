@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     background:linear-gradient(0deg, rgba(42, 44, 47, 0.3), rgba(42, 44, 47, 0.3)), url("../../../images/cover__background.png");
+    background-position: center center;
     background-size: cover;
     text-decoration: none;
     color: #ffffff;
@@ -28,13 +29,8 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
     .cover__link {
-        min-height: 200px;
-        max-width: 320px;
-    }
-
-    .cover__link:hover {
         min-height: 200px;
         max-width: 320px;
     }
